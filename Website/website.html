@@ -111,6 +111,12 @@
         font-size: 26px;
 
     }
+    #AboutMeButton{
+        position: relative;
+        margin: 20px;
+        font-size: 26px;
+
+    }
 
 
 
@@ -138,6 +144,7 @@
                     <button id="SettingsButton" class="btn btn-primary">Settings</button>
                     <button id="CounterButton" class="btn btn-primary" onclick="OpenCounter()">Counter</button>
                     <button id="CalculatorButton" class="btn btn-primary" onclick="OpenCalculator()">Calculator</button>
+                    <button id="AboutMeButton" class="btn btn-primary" onclick="AboutMe()">About Me</button>
                     
                 
                 
@@ -174,6 +181,10 @@
         function OpenCounter(){
             window.location.href = "../Counter/second.html";
     
+        }
+        function AboutMe(){
+            window.location.href = "../AboutMe/index.html";
+
         }
         
         
