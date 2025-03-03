@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50PX;
+            margin: 20px;
+        }
+        #RollButton{
+            position: relative;
+            top: 500px;
+            left: 883px;
+            font-size: 30px;
+            
+            
+            
+        }
+        .dice{
+            font-size: 170px;
+            position: relative;
+            top: 40px;
+            left: 890px;
+            
+            
+        }
+        #btn-menu{
+            float: right;
+            font-size: 30px;
+            position:relative;
+            top: 20px;
+            left: -20px;
+
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div><button id="btn-menu" class="btn btn-info" onclick="Menu()">Back</button></div>
+    <button type="button" class="btn btn-warning" id="RollButton">Roll Dice</button>
+    <h1>Dice Roll Simulator</h1>
+    <div class="dice" id="dice">&#9860;</div>
+
+    
+
+
+    <script src="index.js"></script>
+    <script>
+        function Menu(){
+            window.location.href = "../Website/website.html";
+        }
+    </script>
+</body>
+</html>
