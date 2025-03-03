@@ -74,7 +74,7 @@
             font-size: 30px;
             position:relative;
             top: -100px;
-            
+
             
         }
 
@@ -150,13 +150,14 @@
             fullInput = value;
             }
         function operator_(op){
-            fullInput += op
+            fullInput = currentInput + op + previousInput
             if (currentInput === '') return;
             if (previousInput !== '') {
                 
                 calculate();
             }
             operator = op;
+            
             previousInput = currentInput;
             currentInput = '';
 
