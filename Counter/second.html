@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
         h1 {
             color: blueviolet;
@@ -129,9 +130,19 @@
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.5), 0 0 50px #ff6347; 
             animation: glow 1.5s ease-in-out infinite alternate;
         }
+        #btn-menu{
+            float: right;
+            font-size: 30px;
+            position:relative;
+            
+            
+            
+        }
     </style>
 </head>
 <body>
+    
+    <div><button id="btn-menu" class="btn btn-info" onclick="Menu()">Back</button></div>
     <div class="counter" id="counter">
         <div class="display" id="display">0</div>
         <div class="buttons">
@@ -186,6 +197,9 @@
         function decreaseCounter() {
             currentNumCounter -= 1;
             updateDisplayCounter(currentNumCounter);
+        }
+        function Menu(){
+            window.location.href = "../Website/website.html";
         }
     </script>
     <h1>Counter Baba Pro</h1>

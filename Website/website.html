@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <style>
     #Menu {
         float: right;
         color: rgb(9, 11, 113);
         position: relative;
-        top: -20px;
-        padding: 20px;
+        top: -10px;
+        padding: 15px;
         right: 10px;
         display: block;
 
@@ -25,12 +26,14 @@
         
 
     }
-    h2 {
-       position: absolute;
-       top: -400px;
-       
-       
-    }
+    .btn {
+    width: auto; 
+    padding: 10px 15px; 
+    text-align: center;
+    display: block; 
+}
+    
+    
     .StartButtons {
         margin: 20px;
         position: relative;
@@ -38,19 +41,28 @@
         
     }
 
-    
+    .MenuButtons{
+        position: relative;
+        top: 200px;
+        left: 100px;
+        box-sizing: border-box;
+        margin: 20px;
+        
+        
+    }
     
     #MenuInterface{
        
         background-color: rgba(0, 0, 0, 0.491);
-        padding: 30px, 30px;
+        padding: 20px;
         margin: 10px;
         position: relative;
         top: -30px;
         display: none;
         width: 400px;
         float: right;
-        line-height: 800px;
+        line-height: normal;
+
 
        
 
@@ -71,12 +83,40 @@
         color: rgb(23, 32, 154);
         position: relative;
         top: 0px;
-        padding: 10px;
+        padding: 15px;
         right: 10px;
 
 
+    
+    }
+    
+    #SettingsButton{
+        position: relative;
+        margin: 20px;
+        font-size: 26px;
+        
+    }
+    #CounterButton{
+        position: relative;
+        margin: 20px;
+        font-size: 26px;
+        
+    }
+
+
+
+    #CalculatorButton{
+        position: relative;
+        margin: 20px;
+        font-size: 26px;
 
     }
+
+
+
+    
+    
+
 
 </style>
     
@@ -85,21 +125,27 @@
 
 </head>
 <body>
-    <div class="StartButtons" id="StartButtons">
-        <button id="Menu" onclick="OpenMenu(), HideMenuButton(), ShowBackButton() ">Menu</button>
-    </div>
-    <div class="hidden" id="Hidden"></div>
-        <div class="MenuButtons" id="MenuInterface">
-            <button id="Back" onclick="CloseMenu(), ShowMenuButton()">Close</button>
-            <h2>Menu</h2>
-            <button id="Menu1">Settings</button>
-            <button id="Menu1">Counter</button>
-            <button id="Menu1">Calculator</button>
-            <button id="Menu1">Counter</button>
-            
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="btn" id="btn"></div>
+        <div class="StartButtons" id="StartButtons">
+            <button id="Menu" class="btn btn-primary" onclick="OpenMenu(), HideMenuButton(), ShowBackButton() ">Projects</button>
         </div>
+        <div class="hidden" id="Hidden"></div>
+            <div class="MenuInterface" id="MenuInterface">
+                <button type="button" class="btn btn-primary"id="Back" onclick="CloseMenu(), ShowMenuButton()">Close</button>
+                
+                <div class="MenuButtons" id="MenuButtons"></div>
+                    <button id="SettingsButton" class="btn btn-primary">Settings</button>
+                    <button id="CounterButton" class="btn btn-primary" onclick="OpenCounter()">Counter</button>
+                    <button id="CalculatorButton" class="btn btn-primary" onclick="OpenCalculator()">Calculator</button>
+                    
+                
+                
+
+
+            </div>
+        </div>
+    
     <h1>Title</h1>
     <script>
         function OpenMenu() {
@@ -122,12 +168,18 @@
             document.getElementById("Menu").style.display = "block";
 
         }
+        function OpenCalculator(){
+            window.location.href = "../Calculator/calculator.html";
+        }
+        function OpenCounter(){
+            window.location.href = "../Counter/second.html";
+    
+        }
         
         
 
 
     </script>
-    <h4>Hallo ballo</h4>
  
 
     
